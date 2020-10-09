@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robô - Speak</title>
+
+  <script defer type="text/javascript" src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="./css/styled.css" />
+</head>
+
+<body>
+
+
+  <section>
+
+    <div class="title">
+
+      <h1>
+        Speak Bot
+      </h1>
+
+      <div id="lottie">
+
+      </div>
+
+    </div>
+
+    <div class="box-text">
+
+      <textarea name="text" id="text" cols="30" rows="10"
+        placeholder="Digite seu texto aqui e não se preocupe mais em ler!"></textarea>
+
+    </div>
+
+    <div class="buttons">
+
+      <button class="btn btn-2" id="speak">
+        Falar
+      </button>
+
+      <button class="btn btn-1" id="stop">
+        Pausar
+      </button>
+
+    </div>
+
+  </section>
+
+  <script>
+
+    var animation = bodymovin.loadAnimation({
+      container: document.querySelector('#lottie'),
+      path: './json/data.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: 'Lottie Robot',
+    })
+
+  </script>
+
+</body>
+
+</html>
