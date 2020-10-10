@@ -9,7 +9,7 @@ utterance.rate = 2;
 
 const speak = () => {
   if (utterance.text === "") {
-    utterance.text = "Digite um texto seu corno!";
+    utterance.text = "Digite um texto!";
   }
   speechSynthesis.speak(utterance);
 };
